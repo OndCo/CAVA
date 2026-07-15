@@ -61,7 +61,7 @@ In short:
 ## Install
 
 ```bash
-npm install @osuite/cava-core
+npm install osuite-cava-core
 ```
 
 For local development from this repository:
@@ -82,7 +82,7 @@ import {
   defineRuntimeAdapter,
   verifyApprovalBinding,
   verifyCavaReceipt,
-} from '@osuite/cava-core';
+} from 'osuite-cava-core';
 
 const adapter = defineRuntimeAdapter({
   id: 'example-shell-adapter',

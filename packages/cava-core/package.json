@@ -1,5 +1,5 @@
 {
-  "name": "@osuite/cava-core",
+  "name": "osuite-cava-core",
   "version": "0.1.0",
   "description": "Canonical Action Verification and Attestation primitives for agent runtime governance.",
   "type": "module",

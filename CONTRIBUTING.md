@@ -17,7 +17,7 @@ npm run verify
 
 - the open-core boundary check;
 - the Vitest suite;
-- an npm package dry run for `@osuite/cava-core`.
+- an npm package dry run for `osuite-cava-core`.
 
 ## Contribution boundary
 

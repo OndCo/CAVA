@@ -32,7 +32,7 @@ import {
   projectCavaToOpenTelemetry,
   verifyApprovalBinding,
   verifyCavaReceipt,
-} from '@osuite/cava-core';
+} from 'osuite-cava-core';
 
 const adapter = defineRuntimeAdapter({
   id: 'example-shell-adapter',
