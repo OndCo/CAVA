@@ -1,0 +1,23 @@
+{
+  "name": "cava",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Canonical Action Verification and Attestation for AI agent runtimes.",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "node scripts/check-open-boundary.mjs",
+    "verify": "npm run lint && npm test && npm pack --workspace @osuite/cava-core --dry-run"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "Apache-2.0"
+}

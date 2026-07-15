@@ -1,0 +1,33 @@
+{
+  "name": "@osuite/cava-core",
+  "version": "0.1.0",
+  "description": "Canonical Action Verification and Attestation primitives for agent runtime governance.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "COMMERCIAL_BOUNDARY.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OndCo/CAVA.git",
+    "directory": "packages/cava-core"
+  },
+  "bugs": {
+    "url": "https://github.com/OndCo/CAVA/issues"
+  },
+  "homepage": "https://github.com/OndCo/CAVA#readme",
+  "license": "Apache-2.0",
+  "keywords": [
+    "ai-governance",
+    "agent-runtime",
+    "canonical-action",
+    "attestation",
+    "approval-binding"
+  ]
+}
