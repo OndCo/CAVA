@@ -15,7 +15,7 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 The public arXiv record is now available at:
 
 ```text
-https://arxiv.org/abs/2607.13040
+https://arxiv.org/abs/2607.13716
 ```
 
 Recommended citation:
@@ -25,9 +25,9 @@ Recommended citation:
   title={CAVA: Canonical Action Verification and Attestation for Runtime Governance of Agentic AI Systems},
   author={Wang, Zexun},
   year={2026},
-  eprint={2607.13040},
+  eprint={2607.13716},
   archivePrefix={arXiv},
   primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2607.13040}
+  url={https://arxiv.org/abs/2607.13716}
 }
 ```

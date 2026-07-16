@@ -6,9 +6,9 @@ authors:
     given-names: Zexun
 version: "0.1.0"
 repository-code: "https://github.com/OndCo/CAVA"
-url: "https://arxiv.org/abs/2607.13040"
+url: "https://arxiv.org/abs/2607.13716"
 license: "Apache-2.0"
 identifiers:
   - type: other
-    value: "arXiv:2607.13040"
+    value: "arXiv:2607.13716"
     description: "arXiv identifier"

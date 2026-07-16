@@ -2,7 +2,7 @@
 
 **Canonical Action Verification and Attestation for AI agent runtimes.**
 
-[![arXiv](https://img.shields.io/badge/arXiv-2607.13040-b31b1b.svg)](https://arxiv.org/abs/2607.13040)
+[![arXiv](https://img.shields.io/badge/arXiv-2607.13716-b31b1b.svg)](https://arxiv.org/abs/2607.13716)
 [![npm](https://img.shields.io/npm/v/osuite-cava-core.svg)](https://www.npmjs.com/package/osuite-cava-core)
 [![License](https://img.shields.io/badge/license-Apache--2.0-black.svg)](./LICENSE)
 
@@ -137,17 +137,17 @@ docs/                    Project notes and commercial boundary
 The CAVA manuscript is available on arXiv:
 
 > Zexun Wang. **CAVA: Canonical Action Verification and Attestation for Runtime
-> Governance of Agentic AI Systems.** arXiv:2607.13040, 2026.
+> Governance of Agentic AI Systems.** arXiv:2607.13716, 2026.
 
 ```bibtex
 @misc{wang2026cava,
   title={CAVA: Canonical Action Verification and Attestation for Runtime Governance of Agentic AI Systems},
   author={Wang, Zexun},
   year={2026},
-  eprint={2607.13040},
+  eprint={2607.13716},
   archivePrefix={arXiv},
   primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2607.13040}
+  url={https://arxiv.org/abs/2607.13716}
 }
 ```
 
