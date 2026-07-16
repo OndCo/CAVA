@@ -2,6 +2,9 @@
 
 CAVA Core is the open-source skeleton for **Canonical Action Verification and Attestation**.
 
+[![arXiv](https://img.shields.io/badge/arXiv-2607.13040-b31b1b.svg)](https://arxiv.org/abs/2607.13040)
+[![npm](https://img.shields.io/npm/v/osuite-cava-core.svg)](https://www.npmjs.com/package/osuite-cava-core)
+
 It gives developers a portable way to describe runtime actions, compute canonical fingerprints, and verify receipts. It does **not** ship OSuite's managed governance runtime, production parser packs, approval workflows, evidence graph, or enterprise attestation services.
 
 ## What This Package Is
@@ -153,3 +156,22 @@ That lets the ecosystem adopt the language while customers still pay for managed
 ## Current Status
 
 This package is intentionally a skeleton. The production-grade implementation in OSuite Studio includes richer parser packs, risk semantics, approval workflows, evidence closure, and enterprise operations that are not exported here.
+
+## Research Citation
+
+CAVA is described in the public arXiv manuscript:
+
+> Zexun Wang. **CAVA: Canonical Action Verification and Attestation for Runtime
+> Governance of Agentic AI Systems.** arXiv:2607.13040, 2026.
+
+```bibtex
+@misc{wang2026cava,
+  title={CAVA: Canonical Action Verification and Attestation for Runtime Governance of Agentic AI Systems},
+  author={Wang, Zexun},
+  year={2026},
+  eprint={2607.13040},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2607.13040}
+}
+```

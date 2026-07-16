@@ -12,4 +12,22 @@ Build locally with a standard TeX Live distribution:
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-The citation block will be updated after the arXiv submission is announced.
+The public arXiv record is now available at:
+
+```text
+https://arxiv.org/abs/2607.13040
+```
+
+Recommended citation:
+
+```bibtex
+@misc{wang2026cava,
+  title={CAVA: Canonical Action Verification and Attestation for Runtime Governance of Agentic AI Systems},
+  author={Wang, Zexun},
+  year={2026},
+  eprint={2607.13040},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2607.13040}
+}
+```

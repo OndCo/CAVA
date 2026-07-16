@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use CAVA in research or engineering work, please cite the arXiv paper."
+title: "CAVA: Canonical Action Verification and Attestation for Runtime Governance of Agentic AI Systems"
+authors:
+  - family-names: Wang
+    given-names: Zexun
+version: "0.1.0"
+repository-code: "https://github.com/OndCo/CAVA"
+url: "https://arxiv.org/abs/2607.13040"
+license: "Apache-2.0"
+identifiers:
+  - type: other
+    value: "arXiv:2607.13040"
+    description: "arXiv identifier"

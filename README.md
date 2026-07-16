@@ -2,6 +2,10 @@
 
 **Canonical Action Verification and Attestation for AI agent runtimes.**
 
+[![arXiv](https://img.shields.io/badge/arXiv-2607.13040-b31b1b.svg)](https://arxiv.org/abs/2607.13040)
+[![npm](https://img.shields.io/npm/v/osuite-cava-core.svg)](https://www.npmjs.com/package/osuite-cava-core)
+[![License](https://img.shields.io/badge/license-Apache--2.0-black.svg)](./LICENSE)
+
 CAVA is an open semantics layer for describing, fingerprinting, and verifying
 AI-agent actions before they become operational consequences. It gives agent
 builders a portable way to turn heterogeneous runtime events into canonical
@@ -130,8 +134,24 @@ docs/                    Project notes and commercial boundary
 
 ## Research
 
-The CAVA manuscript source is available in [`paper`](./paper). The citation will
-be updated after the arXiv submission is announced.
+The CAVA manuscript is available on arXiv:
+
+> Zexun Wang. **CAVA: Canonical Action Verification and Attestation for Runtime
+> Governance of Agentic AI Systems.** arXiv:2607.13040, 2026.
+
+```bibtex
+@misc{wang2026cava,
+  title={CAVA: Canonical Action Verification and Attestation for Runtime Governance of Agentic AI Systems},
+  author={Wang, Zexun},
+  year={2026},
+  eprint={2607.13040},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2607.13040}
+}
+```
+
+The LaTeX source used for the public manuscript is available in [`paper`](./paper).
 
 ## License
 
