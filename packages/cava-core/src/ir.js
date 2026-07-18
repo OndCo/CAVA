@@ -1,6 +1,6 @@
 import { hashCanonicalValue } from './hash.js';
 
-export const CAVA_IR_SCHEMA_VERSION = 'osuite.cava.ir.v1';
+export const CAVA_IR_SCHEMA_VERSION = 'cava.ir.v1';
 
 function asObject(value) {
   return value && typeof value === 'object' && !Array.isArray(value) ? value : {};

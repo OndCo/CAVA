@@ -12,6 +12,7 @@ import {
   defineParserPack,
   defineRuntimeAdapter,
   projectCavaToOpenTelemetry,
+  scanLocaleRiskHints,
   sha256Hex,
   verifyApprovalBinding,
   verifyCavaExecution,
@@ -19,7 +20,7 @@ import {
 } from '../packages/cava-core/src/index.js';
 
 describe('CAVA open-core package', () => {
-  it('keeps the open package independent from OSuite Studio internals', () => {
+  it('keeps the open package independent from commercial studio internals', () => {
     const packageDir = path.resolve(process.cwd(), 'packages/cava-core/src');
     const source = fs.readdirSync(packageDir)
       .filter((file) => file.endsWith('.js'))
@@ -117,11 +118,11 @@ describe('CAVA open-core package', () => {
     const telemetry = projectCavaToOpenTelemetry(ir);
     const statement = buildCavaInTotoStatement(ir, {
       subjectName: 'act_1',
-      predicateType: 'https://osuite.ai/cava/ir/v1',
+      predicateType: 'https://cava.dev/schemas/ir/v1',
     });
 
     expect(telemetry).toMatchObject({
-      'cava.schema_version': 'osuite.cava.ir.v1',
+      'cava.schema_version': 'cava.ir.v1',
       'cava.semantic_key': ir.semantic_key,
       'cava.operation.category': 'deployment',
       'cava.resource.system': 'git',
@@ -129,7 +130,7 @@ describe('CAVA open-core package', () => {
     });
     expect(statement).toMatchObject({
       _type: 'https://in-toto.io/Statement/v1',
-      predicateType: 'https://osuite.ai/cava/ir/v1',
+      predicateType: 'https://cava.dev/schemas/ir/v1',
       subject: [{ name: 'act_1', digest: { sha256: ir.semantic_key } }],
     });
     expect(verifyCavaExecution({
@@ -172,7 +173,7 @@ describe('CAVA open-core package', () => {
     );
 
     expect(result).toMatchObject({
-      schema_version: 'osuite.cava.decomposition.v1',
+      schema_version: 'cava.decomposition.v1',
       action_count: 2,
       parser_pack_ids: ['unit-shell-pack@0.1.0'],
     });
@@ -181,5 +182,34 @@ describe('CAVA open-core package', () => {
       'deployment',
     ]);
     expect(result.primary_fingerprint).toMatch(/^[a-f0-9]{64}$/);
+  });
+
+  it('provides locale-aware conservative hints without replacing runtime structure', () => {
+    const risky = scanLocaleRiskHints({
+      declared_goal: '顧客情報をCSV出力して外部Slackへ共有します。承認は後で確認します。',
+      reversible: false,
+    });
+    const readOnly = scanLocaleRiskHints({
+      declared_goal: '本番環境のログを確認するだけです。変更、削除、外部送信は行いません。',
+      reversible: true,
+      action_category: 'observation',
+    });
+
+    expect(risky).toMatchObject({
+      schema_version: 'cava.locale_risk_hints.v1',
+      fail_closed: true,
+      observation_only: false,
+    });
+    expect(risky.hints).toEqual(expect.arrayContaining([
+      expect.objectContaining({ locale: 'ja', category: 'sensitive_data' }),
+      expect.objectContaining({ locale: 'ja', category: 'external_egress' }),
+    ]));
+    expect(readOnly.hints).toEqual(expect.arrayContaining([
+      expect.objectContaining({ locale: 'ja', category: 'production_boundary' }),
+    ]));
+    expect(readOnly).toMatchObject({
+      fail_closed: false,
+      observation_only: true,
+    });
   });
 });

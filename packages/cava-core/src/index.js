@@ -47,3 +47,7 @@ export {
   getReferenceParserPacks,
   listReferenceParserPackMetadata,
 } from './reference-packs.js';
+export {
+  CAVA_LOCALE_RISK_HINT_SCHEMA_VERSION,
+  scanLocaleRiskHints,
+} from './locale-risk-hints.js';

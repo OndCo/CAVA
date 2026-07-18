@@ -27,7 +27,7 @@ export function buildApprovalBinding({
   const normalizedIr = normalizeIr(ir);
   const normalizedActionId = normalizeString(actionId, 'action');
   const payload = {
-    schema_version: 'osuite.cava.approval_binding.v1',
+    schema_version: 'cava.approval_binding.v1',
     action_id: normalizedActionId,
     semantic_key: normalizedIr.semantic_key,
     approver_id: normalizeString(approverId, 'unknown'),

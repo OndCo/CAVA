@@ -3,7 +3,7 @@ import { createCanonicalAction, validateCanonicalAction } from './schema.js';
 import { hashCanonicalValue } from './hash.js';
 import { normalizeCavaProfile } from './profile.js';
 
-export const CAVA_DECOMPOSITION_SCHEMA_VERSION = 'osuite.cava.decomposition.v1';
+export const CAVA_DECOMPOSITION_SCHEMA_VERSION = 'cava.decomposition.v1';
 
 function normalizePackId(pack = {}) {
   const id = String(pack.id || '').trim();

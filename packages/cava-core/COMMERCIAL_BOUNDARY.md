@@ -15,6 +15,7 @@ The open package is the interoperability skeleton:
 - runtime adapter contract;
 - parser-pack contract and decomposition result schema;
 - disclosure-safe reference parser packs;
+- locale-aware conservative risk hints for teaching and local experiments;
 - profile normalization;
 - reference examples for local experimentation.
 
@@ -28,6 +29,7 @@ The open package intentionally does not include:
 
 - OSuite's production parser packs for shell, browser, MCP, SDK, cloud, payment, identity, database, and deployment runtimes;
 - private multi-action decomposition heuristics, attack-case corpora, and managed parser-pack update channels;
+- production locale packs, customer-specific terminology maps, and multilingual risk calibration;
 - PCAA policy routing, risk calibration, or approval workflow execution;
 - managed evidence graph, replay UI, buyer exports, and assurance packets;
 - hosted workspace governance, team roles, billing, tenant isolation, or audit operations;

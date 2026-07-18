@@ -8,10 +8,11 @@
     "packages/*"
   ],
   "scripts": {
+    "benchmark": "node scripts/run-benchmark.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "node scripts/check-open-boundary.mjs",
-    "verify": "npm run lint && npm test && npm pack --workspace osuite-cava-core --dry-run"
+    "verify": "npm run lint && npm test && npm run benchmark && npm pack --workspace osuite-cava-core --dry-run"
   },
   "devDependencies": {
     "vitest": "^3.2.4"

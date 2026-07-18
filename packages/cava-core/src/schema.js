@@ -1,6 +1,6 @@
-export const CAVA_CANONICAL_SCHEMA_VERSION = 'osuite.cava.canonical_action.v1';
-export const CAVA_RECEIPT_SCHEMA_VERSION = 'osuite.cava.receipt.v1';
-export const CAVA_PROFILE_SCHEMA_VERSION = 'osuite.cava.profile.v1';
+export const CAVA_CANONICAL_SCHEMA_VERSION = 'cava.canonical_action.v1';
+export const CAVA_RECEIPT_SCHEMA_VERSION = 'cava.receipt.v1';
+export const CAVA_PROFILE_SCHEMA_VERSION = 'cava.profile.v1';
 
 export const CAVA_REQUIRED_ACTION_FIELDS = [
   'runtime',

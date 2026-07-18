@@ -33,6 +33,7 @@ import {
   defineRuntimeAdapter,
   getReferenceParserPacks,
   projectCavaToOpenTelemetry,
+  scanLocaleRiskHints,
   verifyApprovalBinding,
   verifyCavaReceipt,
 } from 'osuite-cava-core';
@@ -106,6 +107,12 @@ const reference = decomposeRuntimeEvent(
   { parserPacks: getReferenceParserPacks() }
 );
 console.log(reference.primary_action.category);
+
+const localeHints = scanLocaleRiskHints({
+  declared_goal: '客户信息导出CSV后共享到外部Slack，没有审批。',
+  reversible: false,
+});
+console.log(localeHints.fail_closed);
 ```
 
 ## Framework Layers
@@ -131,6 +138,7 @@ Open source:
 - runtime adapter contract;
 - parser-pack contract and decomposition result schema;
 - disclosure-safe reference parser packs for MCP, browser, cloud, database, payment, and web3 examples;
+- locale-aware conservative risk hints for non-English operator intent;
 - local experimentation primitives.
 
 OSuite commercial layer:
@@ -156,6 +164,11 @@ That lets the ecosystem adopt the language while customers still pay for managed
 ## Current Status
 
 This package is intentionally a skeleton. The production-grade implementation in OSuite Studio includes richer parser packs, risk semantics, approval workflows, evidence closure, and enterprise operations that are not exported here.
+
+Locale-aware hints are intentionally conservative and secondary. They help demos
+and local experiments avoid under-classifying non-English operator intent when
+runtime structure is incomplete; they do not replace runtime-provided action
+fields, parser packs, or managed policy evaluation.
 
 ## Research Citation
 

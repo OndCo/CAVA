@@ -15,6 +15,7 @@ runtime event
   -> canonical action
   -> CAVA-IR
   -> semantic fingerprint
+  -> optional locale hint evidence
   -> local receipt
   -> verifier result
 ```
@@ -33,3 +34,7 @@ runtime adapters
 
 This split is intentional. The open framework creates a shared vocabulary. The
 managed product makes that vocabulary operational for enterprise teams.
+
+Locale hints sit on the open side only as reference evidence. Production
+language packs, customer terminology maps, policy routing, and calibrated review
+thresholds remain managed OSuite capabilities.

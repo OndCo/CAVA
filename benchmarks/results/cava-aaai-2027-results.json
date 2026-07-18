@@ -1,0 +1,495 @@
+{
+  "schema_version": "cava.benchmark.result.v1",
+  "benchmark": "cava-aaai-2027-action-identity-benchmark",
+  "generated_at": "2026-07-18T17:21:36.291Z",
+  "action_families": [
+    "file_code_mutation",
+    "external_web_access",
+    "data_export",
+    "workflow_automation",
+    "deployment_publishing",
+    "communication",
+    "policy_to_runtime_control",
+    "cloud_data_movement",
+    "multilingual_operator_intent",
+    "destructive_database_change"
+  ],
+  "methods": {
+    "cava": {
+      "semantic_equivalence_stability": 100,
+      "semantic_separation": 100,
+      "approval_replay_prevention": 100,
+      "evidence_completeness": 100,
+      "scenarios": [
+        {
+          "scenario_id": "git_push_main",
+          "family": "file_code_mutation",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "external_web_review",
+          "family": "external_web_access",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "customer_csv_export",
+          "family": "data_export",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "n8n_invoice_workflow",
+          "family": "workflow_automation",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "package_publish",
+          "family": "deployment_publishing",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "support_email_send",
+          "family": "communication",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "policy_degradation_before_deploy",
+          "family": "policy_to_runtime_control",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "cloud_storage_upload",
+          "family": "cloud_data_movement",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "multilingual_customer_export",
+          "family": "multilingual_operator_intent",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "production_database_delete",
+          "family": "destructive_database_change",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        }
+      ]
+    },
+    "cava_no_resource_target": {
+      "semantic_equivalence_stability": 100,
+      "semantic_separation": 10,
+      "approval_replay_prevention": 10,
+      "evidence_completeness": 75,
+      "scenarios": [
+        {
+          "scenario_id": "git_push_main",
+          "family": "file_code_mutation",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "external_web_review",
+          "family": "external_web_access",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "customer_csv_export",
+          "family": "data_export",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "n8n_invoice_workflow",
+          "family": "workflow_automation",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "package_publish",
+          "family": "deployment_publishing",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "support_email_send",
+          "family": "communication",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "policy_degradation_before_deploy",
+          "family": "policy_to_runtime_control",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "cloud_storage_upload",
+          "family": "cloud_data_movement",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "multilingual_customer_export",
+          "family": "multilingual_operator_intent",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "production_database_delete",
+          "family": "destructive_database_change",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        }
+      ]
+    },
+    "cava_runtime_bound": {
+      "semantic_equivalence_stability": 0,
+      "semantic_separation": 100,
+      "approval_replay_prevention": 100,
+      "evidence_completeness": 100,
+      "scenarios": [
+        {
+          "scenario_id": "git_push_main",
+          "family": "file_code_mutation",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "external_web_review",
+          "family": "external_web_access",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "customer_csv_export",
+          "family": "data_export",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "n8n_invoice_workflow",
+          "family": "workflow_automation",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "package_publish",
+          "family": "deployment_publishing",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "support_email_send",
+          "family": "communication",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "policy_degradation_before_deploy",
+          "family": "policy_to_runtime_control",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "cloud_storage_upload",
+          "family": "cloud_data_movement",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "multilingual_customer_export",
+          "family": "multilingual_operator_intent",
+          "equivalent_variant_key_count": 2,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "production_database_delete",
+          "family": "destructive_database_change",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        }
+      ]
+    },
+    "raw_string": {
+      "semantic_equivalence_stability": 0,
+      "semantic_separation": 90,
+      "approval_replay_prevention": 90,
+      "evidence_completeness": 25,
+      "scenarios": [
+        {
+          "scenario_id": "git_push_main",
+          "family": "file_code_mutation",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "external_web_review",
+          "family": "external_web_access",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "customer_csv_export",
+          "family": "data_export",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "n8n_invoice_workflow",
+          "family": "workflow_automation",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "package_publish",
+          "family": "deployment_publishing",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "support_email_send",
+          "family": "communication",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "policy_degradation_before_deploy",
+          "family": "policy_to_runtime_control",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "cloud_storage_upload",
+          "family": "cloud_data_movement",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "multilingual_customer_export",
+          "family": "multilingual_operator_intent",
+          "equivalent_variant_key_count": 2,
+          "counterfactual_separated": true
+        },
+        {
+          "scenario_id": "production_database_delete",
+          "family": "destructive_database_change",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": true
+        }
+      ]
+    },
+    "first_token": {
+      "semantic_equivalence_stability": 10,
+      "semantic_separation": 0,
+      "approval_replay_prevention": 0,
+      "evidence_completeness": 15,
+      "scenarios": [
+        {
+          "scenario_id": "git_push_main",
+          "family": "file_code_mutation",
+          "equivalent_variant_key_count": 2,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "external_web_review",
+          "family": "external_web_access",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "customer_csv_export",
+          "family": "data_export",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "n8n_invoice_workflow",
+          "family": "workflow_automation",
+          "equivalent_variant_key_count": 2,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "package_publish",
+          "family": "deployment_publishing",
+          "equivalent_variant_key_count": 2,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "support_email_send",
+          "family": "communication",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "policy_degradation_before_deploy",
+          "family": "policy_to_runtime_control",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "cloud_storage_upload",
+          "family": "cloud_data_movement",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "multilingual_customer_export",
+          "family": "multilingual_operator_intent",
+          "equivalent_variant_key_count": 1,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "production_database_delete",
+          "family": "destructive_database_change",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        }
+      ]
+    },
+    "runtime_label": {
+      "semantic_equivalence_stability": 0,
+      "semantic_separation": 0,
+      "approval_replay_prevention": 0,
+      "evidence_completeness": 30,
+      "scenarios": [
+        {
+          "scenario_id": "git_push_main",
+          "family": "file_code_mutation",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "external_web_review",
+          "family": "external_web_access",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "customer_csv_export",
+          "family": "data_export",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "n8n_invoice_workflow",
+          "family": "workflow_automation",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "package_publish",
+          "family": "deployment_publishing",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "support_email_send",
+          "family": "communication",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "policy_degradation_before_deploy",
+          "family": "policy_to_runtime_control",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "cloud_storage_upload",
+          "family": "cloud_data_movement",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "multilingual_customer_export",
+          "family": "multilingual_operator_intent",
+          "equivalent_variant_key_count": 2,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "production_database_delete",
+          "family": "destructive_database_change",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        }
+      ]
+    },
+    "trace_span": {
+      "semantic_equivalence_stability": 0,
+      "semantic_separation": 0,
+      "approval_replay_prevention": 0,
+      "evidence_completeness": 30,
+      "scenarios": [
+        {
+          "scenario_id": "git_push_main",
+          "family": "file_code_mutation",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "external_web_review",
+          "family": "external_web_access",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "customer_csv_export",
+          "family": "data_export",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "n8n_invoice_workflow",
+          "family": "workflow_automation",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "package_publish",
+          "family": "deployment_publishing",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "support_email_send",
+          "family": "communication",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "policy_degradation_before_deploy",
+          "family": "policy_to_runtime_control",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "cloud_storage_upload",
+          "family": "cloud_data_movement",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "multilingual_customer_export",
+          "family": "multilingual_operator_intent",
+          "equivalent_variant_key_count": 2,
+          "counterfactual_separated": false
+        },
+        {
+          "scenario_id": "production_database_delete",
+          "family": "destructive_database_change",
+          "equivalent_variant_key_count": 3,
+          "counterfactual_separated": false
+        }
+      ]
+    }
+  }
+}

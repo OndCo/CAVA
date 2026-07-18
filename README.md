@@ -40,6 +40,7 @@ raw runtime event -> canonical action -> semantic fingerprint -> receipt -> veri
 - Runtime adapter contract.
 - Parser-pack contract and decomposition result schema.
 - Disclosure-safe reference parser packs.
+- Locale-aware conservative risk hints for non-English operator intent.
 - OpenTelemetry-style and in-toto-style projection helpers.
 - Small examples and tests.
 
@@ -61,6 +62,10 @@ In short:
 
 > CAVA is the open canonical action layer. OSuite is the managed governance
 > control plane that operationalizes it in production.
+
+Locale-aware hints are intentionally small in the open package. They are
+secondary evidence for incomplete structured runtime signals, not a replacement
+for runtime-provided action fields, production parser packs, or policy routing.
 
 ## Install
 
@@ -84,6 +89,7 @@ import {
   canonicalizeRuntimeEvent,
   createCavaIr,
   defineRuntimeAdapter,
+  scanLocaleRiskHints,
   verifyApprovalBinding,
   verifyCavaReceipt,
 } from 'osuite-cava-core';
@@ -118,6 +124,10 @@ const binding = buildApprovalBinding({ actionId: 'act_1', ir });
 console.log(canonical.fingerprint);
 console.log(verifyCavaReceipt(receipt).valid);
 console.log(verifyApprovalBinding(binding, { actionId: 'act_1', ir }).valid);
+console.log(scanLocaleRiskHints({
+  declared_goal: '顧客情報をCSV出力して外部Slackへ共有します。承認は後で確認します。',
+  reversible: false,
+}).fail_closed);
 ```
 
 Runnable examples live in [`examples`](./examples).

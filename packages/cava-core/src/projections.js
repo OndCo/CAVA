@@ -42,7 +42,7 @@ export function buildCavaInTotoStatement(irInput = {}, options = {}) {
         },
       },
     ],
-    predicateType: options.predicateType || 'https://osuite.ai/cava/ir/v1',
+    predicateType: options.predicateType || 'https://cava.dev/schemas/ir/v1',
     predicate: {
       semantic_key: ir.semantic_key,
       ir,
